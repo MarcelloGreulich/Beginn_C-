@@ -10,12 +10,11 @@ namespace beginning
     {
         static void Main(string[] args)
         {
-            //variablen
-            string userName = "Marcello";
-
-            //Programm
-            Console.WriteLine("Hello " + userName+ "!");
-            Console.ReadLine();
+            Console.WriteLine("Wie heißt du?");
+            string userName = Console.ReadLine();
+            Console.WriteLine("Hello " + userName + "!");
+            Console.ReadKey();
+            
         }
     }
 }
