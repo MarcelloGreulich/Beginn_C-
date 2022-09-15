@@ -11,10 +11,13 @@ namespace beginning
         static void Main(string[] args)
         {
             //Ask and store entry
-            for (int i = 0; i < 10; i+=2)
+            int i = 1;
+            while (i<10)
             {
                 Console.WriteLine(i);
+                i++;
             }
+
             //end Programm
             Console.ReadKey();
 
