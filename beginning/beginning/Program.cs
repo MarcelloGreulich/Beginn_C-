@@ -11,19 +11,10 @@ namespace beginning
         static void Main(string[] args)
         {
             //Ask and store entry
-            Console.WriteLine("gib mir ein wort!");
-            string entry = Console.ReadLine();
-
-            //delete spaces
-            string substring_entry = entry.Substring(3);
-
-            //print strings
-            Console.WriteLine("Old String: " + entry);
-            Console.WriteLine("New String: " + substring_entry);
-
-
-
-
+            for (int i = 0; i < 10; i+=2)
+            {
+                Console.WriteLine(i);
+            }
             //end Programm
             Console.ReadKey();
 
