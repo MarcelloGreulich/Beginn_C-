@@ -10,14 +10,19 @@ namespace beginning
     {
         static void Main(string[] args)
         {
-            //Ask and store height
-            Console.WriteLine("Wie groß bist du (in Meter)?");
-            double height = Convert.ToDouble(Console.ReadLine());
-            //Ask and store multiplicator
-            Console.WriteLine("Welchen Multiplikator willst du verwenden?");
-            double multiplicator = Convert.ToDouble(Console.ReadLine());
-            //print and calculate größe
-            Console.WriteLine("Du bist " + height * multiplicator + " groß!");
+            //Ask and store age
+            Console.WriteLine("Wie alt bist du?");
+            int age = Convert.ToInt32(Console.ReadLine());
+            //test if user is 18+ 
+            if(age < 18)
+            {
+                Console.WriteLine("Du kommst hier net rein!");
+            }
+            else
+            {
+                Console.WriteLine("Viel Spaß");
+            }
+
             //end Programm
             Console.ReadKey();
 
