@@ -14,11 +14,13 @@ namespace beginning
             Console.WriteLine("gib mir ein wort!");
             string entry = Console.ReadLine();
 
-            string replaced_entry = entry.Replace("U", "G").Replace("u", "g");
+            //delete spaces
+            string trim_entry = entry.Trim(' ','a');
 
-            Console.WriteLine("Der alte Text war " + entry);
-            Console.WriteLine("Der neue text ist " + replaced_entry);
-            
+            //print strings
+            Console.WriteLine("Old String " + entry + ":");
+            Console.WriteLine("New String " + trim_entry + ":");
+
             //end Programm
             Console.ReadKey();
 
