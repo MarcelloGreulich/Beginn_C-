@@ -10,13 +10,19 @@ namespace beginning
     {
         static void Main(string[] args)
         {
-            //Ask and store entry
-            int i = 1;
-            do
+            string entry = "Das ist ein Text mit wörtern";
+
+            string[] entries = entry.Split(' ');
+
+            foreach (string wort in entries)
             {
-                Console.WriteLine(i);
-                i++;
-            } while (i<10);
+                Console.WriteLine(wort);
+            }
+
+            for (int i = 0;i< entries.Length; i++)
+            {
+                Console.WriteLine(entries[i]);
+            }
 
             //end Programm
             Console.ReadKey();
