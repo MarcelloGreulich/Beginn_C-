@@ -12,11 +12,11 @@ namespace beginning
         {
             //Ask and store entry
             int i = 1;
-            while (i<10)
+            do
             {
                 Console.WriteLine(i);
                 i++;
-            }
+            } while (i<10);
 
             //end Programm
             Console.ReadKey();
