@@ -15,11 +15,14 @@ namespace beginning
             string entry = Console.ReadLine();
 
             //delete spaces
-            string trim_entry = entry.Trim(' ','a');
+            string substring_entry = entry.Substring(3);
 
             //print strings
-            Console.WriteLine("Old String " + entry + ":");
-            Console.WriteLine("New String " + trim_entry + ":");
+            Console.WriteLine("Old String: " + entry);
+            Console.WriteLine("New String: " + substring_entry);
+
+
+
 
             //end Programm
             Console.ReadKey();
